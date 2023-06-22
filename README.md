@@ -178,3 +178,6 @@ git add .
 git commit -m "Add GitHub Actions workflow"
 git push origin
 ```
+
+### 8. 주석 공간
+- 배포 되나요?
