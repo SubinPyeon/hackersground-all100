@@ -1,4 +1,18 @@
-var htmlContent = @"
+
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
+
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+
+app.UseRouting();
+
+app.MapGet("/", async context =>
+{
+
+    // HTML 페이지를 작성합니다.
+    var htmlContent = @"
     <!DOCTYPE html>
     <html>
     <head>
@@ -35,4 +49,16 @@ var htmlContent = @"
         <img src=""/workspaces/hackersground-all100/picture2.jpg"" width=""50"" height=""50"">
     </body>
     </html>
-";
+    ";
+
+    // HTML 응답을 반환합니다.
+    context.Response.ContentType = "text/html";
+    await context.Response.WriteAsync(htmlContent);
+});
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+
+app.Run();
