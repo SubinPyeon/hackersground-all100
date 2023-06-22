@@ -10,7 +10,9 @@ app.UseRouting();
 app.MapGet("/", async context =>
 {
     var message = "Hello, World!!!!!!!";
+    var message1 = "Hello!!!!!!!";
     await context.Response.WriteAsync($"<h1>{message}</h1>");
+    await context.Response.WriteAsync($"<h1>{message1}</h1>");
 });
 
 if (app.Environment.IsDevelopment())
