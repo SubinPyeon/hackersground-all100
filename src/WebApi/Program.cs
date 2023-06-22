@@ -39,6 +39,8 @@ app.MapGet("/", async context =>
 
             <!-- 이미지를 추가합니다. -->
             <img src=""background_img.jpg"" width=""50"" height=""50"">
+            <img src=src/WebApi/bongbong.jpeg width=""50"" height=""50"">
+            <img src=""/workspaces/hackersground-all100/picture2.jpg"" width=""50"" height=""50"">
         </body>
         </html>
     ";
