@@ -16,6 +16,7 @@ app.MapGet("/", async context =>
         <!DOCTYPE html>
         <html>
         <head>
+            <meta charset=""UTF-8"">
             <title>My Web Page</title>
             <style>
                 /* CSS 스타일을 적용합니다. */
