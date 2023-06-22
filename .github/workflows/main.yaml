@@ -33,7 +33,7 @@ jobs:
 
     # add a step to publish src/WebApi
     - name: Publish
-      run: dotnet publish WEB_About_Me/WEB --configuration Release --output publish
+      run: dotnet publish src/WebApi/WEB --configuration Release --output publish
     
     # add a step to login to Azure
     - name: Azure Login
@@ -48,5 +48,3 @@ jobs:
         app-name: ${{ vars.AZURE_WEBAPP_NAME }}
         package: publish
 
-
-#aaa
