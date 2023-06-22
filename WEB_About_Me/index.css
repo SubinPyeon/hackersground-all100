@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; /*정확한 계산위해 기본 마진과 패딩 값을 0으로 초기화 하고 시작*/
+  font-family: 'nanum_neo' !important; /*폰트 강제로 전체 적용*/
+}
+
+@font-face {
+  /* 폰트 적용 https://creatorjo.tistory.com/4 */
+  src: url("NanumSquareNeo-cBd.ttf");
+  font-family: 'nanum_neo';
+}
+
+ pre{
+  /*행간 조절*/
+  line-height: 1.25; 
+} 
+
+html {
+  background-size: cover;
+  /*object-fit 속성과 동일*/
+  scroll-behavior: smooth;
+  /* https://gurtn.tistory.com/182 */
+  /* https://paperblock.tistory.com/148 */
+  font-family: 'nanum_neo' !important;
+}
+
+.nav-wrapper {
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  /*좌우 정렬*/
+  align-items: center;
+  /*위아래 정렬*/
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  /*점 없애기*/
+}
+
+/*nav 클래스 안에 li 태그를 의미*/
+.nav li {
+  /*상하 좌우 패딩 설정*/
+  padding: 0 15px;
+}
+
+.nav li a {
+  /*밑줄 지우기*/
+  text-decoration: none;
+  color: black;
+}
+
+.nav li a:hover {
+  color: rgb(23, 187, 23);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: auto;
+  /*남은 빈공간을 로고의 오른쪽 공간으로 할당*/
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+}
+
+.my_info {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*위아래 정렬*/
+  position: relative;
+}
+
+.info_pic {
+  overflow: hidden;
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  border-radius: 500px;
+  box-shadow: 0px 2px 20px black;
+  margin: 30px;
+}
+
+.info_pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*사진 비율 유지하며 공간에 맞게*/
+}
+
+.name {
+  font-size: 40px;
+}
+
+.content {
+  font-size: 20px;
+}
+
+.info_text {
+  margin: 30px;
+}
+
+.title {
+  font-size: 35px;
+  font-style: bold;
+  text-align: center;
+  padding: 50px;
+  color: black;
+}
+
+.first {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  /*배경사진 꽉차게*/
+}
+
+.pic_container {
+  display: flex;
+  flex-wrap: nowrap;
+  /*좁아질 때 자동으로 내려가게*/
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  height: 80%;
+  background-color: white;
+  overflow: hidden;
+  padding-top: 130px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.pro_pic {
+   overflow: hidden;
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  border-radius: 500px;
+  box-shadow: 0px 2px 20px black;
+  margin: 30px; 
+}
+
+.pro_pic img {
+   /* overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 2px 20px gray;
+  width: 250px;
+  height: 250px;
+  border-radius: 500px;
+  justify-content: center;
+  align-items: center;  */
+   width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.pro_text {
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.pro_text p{
+  line-height: 2; 
+}
+
+.second {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.whatilike{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatilike li a {
+  font-size: 30px;
+  font-style: bold;
+  text-align: center;
+  padding: 50px;
+  color: black;
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 2px 20px gray;
+  margin: 30px;
+  transition: 0.3s;
+  /*카드 올라오는거 부드럽게*/
+  position: relative;
+}
+
+.card:hover {
+  transform:translateY(-10px); /*마우스 클릭시 위로 10픽셀 올라옴*/
+}
+
+.card-banner img {
+  width: 100%;
+  /*부모요소 기준으로 100%*/
+  height: 230px;
+  object-fit: cover;
+  /*꽉 채우고 비율 유지*/
+  position: absolute;
+}
+
+.card-wrapper {
+  height: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  margin: 240px 15px 15px;
+  /*카드 다시 보이게 높이 230이니까 240으로*/
+}
+
+.pic-wrapper {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  /*좁아질 때 자동으로 내려가게*/
+  justify-content: center;
+  align-items: center;
+}
+
+.pic img{
+  height: 480px;
+  width: 350px;
+  object-fit: cover;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 2px 20px gray;
+  margin: 20px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.pic img:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+.discribe {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.third {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.fourth {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.fifth {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.topbutton {
+  position: fixed;
+  margin: 20px;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  opacity: 0.8;
+}
