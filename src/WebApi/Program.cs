@@ -34,13 +34,23 @@ app.MapGet("/", async context =>
                 .kimi {
                 font-size: 30px;
                 font-weight: bold;
-                color: red; /* 원하는 색상으로 변경하세요 */
+                color: blue; /* 원하는 색상으로 변경하세요 */
                 }
             </style>
         </head>
         <body>
-            <h1>치매 환자 지킴이 서비스</h1>
+            <h1>""치매 환자 지킴이 서비스""</h1>
             <h1><span class=""kimi"">KIMI</h1>
+
+            <h1>"" '지킴이' -> '지키미' -> '키미(KIMI)'
+            키미앱은 보호자와 보호대상자를 연결하여
+            배회하는 치매환자를 지키는 서비스입니다.
+
+            치매환자가 배회할 때 보호자에게 알림이 가고
+            보호자는 치매환자의 위치를 확인할 수 있습니다.
+            ""</h1>
+
+
             <!-- 이미지를 추가합니다. -->
             <img src=""https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2011&q=80"" width=""50"" height=""50"">
             <img src=src/WebApi/bongbong.jpeg width=""50"" height=""50"">
