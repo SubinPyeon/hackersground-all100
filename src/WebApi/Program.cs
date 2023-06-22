@@ -9,8 +9,6 @@ app.UseRouting();
 
 app.MapGet("/", async context =>
 {
-    var message = "Hello, World!!!!!!!";
-    var message1 = "Hello!!!!!!!";
     // HTML 페이지를 작성합니다.
     var htmlContent = @"
         <!DOCTYPE html>
@@ -54,8 +52,8 @@ app.MapGet("/", async context =>
 
             <!-- 이미지를 추가합니다. -->
             <img src=""https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2011&q=80"" width=""50"" height=""50"">
-            <img src=src/WebApi/bongbong.jpeg width=""50"" height=""50"">
-            <img src=""/workspaces/hackersground-all100/picture2.jpg"" width=""50"" height=""50"">
+            <img src=""https://postfiles.pstatic.net/MjAyMzAxMDVfMTQg/MDAxNjcyODQ3MDY5MDk4.bsa1KCm6jjZ27ULMHRC35HdHC-kENbP5lvV-Jzi9-qog.qJn3nilHe4lNNd-OBJYY71sq2598--MtR4Wf21wvPfYg.JPEG.sbp111/P20221221_121143918_6DE0EAC3-5C3D-4049-9A1B-68FFD94460D1.jpg?type=w966"" width=""50"" height=""50"">
+            <img src=""https://postfiles.pstatic.net/MjAyMzAxMDVfMTM2/MDAxNjcyODQ3MDY5MjQ4.iBklDVfKLMVpIoApIYgcxaT-XpFcAW24eeJ-8LH25mcg.wHErblwbwYwsC-pYyA_D8dwz5INxXDeLlqrN9pmBO8Yg.JPEG.sbp111/P20221221_131333441_22793F7E-24EE-4114-A5BD-1B2E9959162C.jpg?type=w966"" width=""50"" height=""50"">
         </body>
         </html>
     ";
