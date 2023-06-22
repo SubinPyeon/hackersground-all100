@@ -47,5 +47,3 @@ jobs:
       with:
         app-name: ${{ vars.AZURE_WEBAPP_NAME }}
         package: publish
-
-#aaaa
