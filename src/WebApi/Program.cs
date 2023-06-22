@@ -38,7 +38,7 @@ app.MapGet("/", async context =>
             <h1>" + message1 + @"</h1>
 
             <!-- 이미지를 추가합니다. -->
-            <img src=""background_img.jpg"" alt=""My Image"">
+            <img src="background_img.jpg">
         </body>
         </html>
     ";
